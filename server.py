@@ -32,7 +32,7 @@ def list_indexes() -> str:
 
 @mcp.tool()
 def search_splunk(query: str, earliest: str = "-1h", latest: str = "now", max_results: int = 50) -> str:
-    """Run a read-only search; use index=windows for live Windows events or index=wineventlog in demo mode.
+    """Run a read-only search; use index=wineventlog_test for the uploaded sample, index=windows for live Windows events, or index=wineventlog in demo mode.
 
     Check list_indexes first if the expected index is not returning events.
     """
